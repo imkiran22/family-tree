@@ -1,0 +1,39 @@
+/* Add your styles here */
+textarea {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  background: linear-gradient(to right, gray, #363636);
+  color: whitesmoke;
+  outline: none;
+  resize: none;
+  border: none;
+  padding: 3px;
+  display: none;
+}
+
+body {
+  overflow: scroll;
+}
+
+rect {
+  fill: green;
+  stroke: gray;
+  stroke-width: 2;
+}
+
+path {
+  fill: none;
+  stroke: green;
+  stroke-width: 4px;
+}
+
+text {
+  text-anchor: middle;
+  fill: whitesmoke;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
