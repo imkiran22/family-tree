@@ -2,8 +2,7 @@
 textarea {
   width: 100%;
   font-size: 14px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   background: linear-gradient(to right, gray, #363636);
   color: whitesmoke;
@@ -19,21 +18,22 @@ body {
 }
 
 rect {
-  fill: green;
+  /* fill: green; */
   stroke: gray;
   stroke-width: 2;
 }
 
 path {
   fill: none;
-  stroke: green;
-  stroke-width: 4px;
+  stroke: gray;
+  stroke-width: 2px;
 }
 
 text {
   text-anchor: middle;
-  fill: whitesmoke;
+  fill: #363636;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 2px;
+  font-weight: 600;
 }

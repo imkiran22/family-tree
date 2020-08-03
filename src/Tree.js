@@ -57,51 +57,6 @@ export class Tree {
 
     const treeStructure = d3.tree().size([width, height]);
     const information = treeStructure(dataStructure);
-    const patterns = this.svg
-      .append("g")
-      .selectAll("pattern")
-      .data(information.descendants());
-
-    patterns
-      .enter()
-      .append("pattern")
-      .attr("id", function(d) {
-        return d.id;
-      })
-      .attr("width", "150px")
-      .attr("height", "40px");
-    patterns
-      .enter()
-      .append("svg:image")
-      .attr("x", function(d) {
-        return d.x - 75;
-      })
-      .attr("y", function(d) {
-        return d.y - 20;
-      })
-      .attr("width", 150)
-      .attr("height", 40)
-      .attr("xlink:href", DEFAULT_PROFILE_PIC.female);
-
-    const rectangles = this.svg
-      .append("g")
-      .selectAll("rect")
-      .data(information.descendants());
-    rectangles
-      .enter()
-      .append("rect")
-      .attr("x", function(d) {
-        return d.x - 75;
-      })
-      .attr("y", function(d) {
-        return d.y - 20;
-      })
-      .attr("width", "150px")
-      .attr("height", "40px")
-      .attr("fill", function(d) {
-        return `url(#${d.id})`;
-      });
-
     const connections = this.svg
       .append("g")
       .selectAll("path")
@@ -131,6 +86,55 @@ export class Tree {
         );
       });
 
+    const patterns = this.svg
+      .append("g")
+      .selectAll("pattern")
+      .data(information.descendants());
+
+    patterns
+      .enter()
+      .append("pattern")
+      .attr("id", function(d) {
+        return d.id;
+      })
+      .attr("width", "80px")
+      .attr("height", "60px");
+    patterns
+      .enter()
+      .append("svg:image")
+      .attr("x", function(d) {
+        return d.x - 35;
+      })
+      .attr("y", function(d) {
+        return d.y - 20;
+      })
+      .attr("width", 80)
+      .attr("height", 60)
+      .attr("xlink:href", function(d) {
+        return DEFAULT_PROFILE_PIC[d.data.gender];
+      });
+
+    const rectangles = this.svg
+      .append("g")
+      .selectAll("rect")
+      .data(information.descendants());
+    rectangles
+      .enter()
+      .append("rect")
+      .attr("x", function(d) {
+        // return d.x - 75;
+        return d.x - 25;
+      })
+      .attr("y", function(d) {
+        return d.y - 20;
+      })
+      //.attr("width", "150px")
+      .attr("width", "60px")
+      .attr("height", "60px")
+      .attr("fill", function(d) {
+        return `url(#${d.id})`;
+      });
+
     const names = this.svg
       .append("g")
       .selectAll("text")
@@ -139,13 +143,14 @@ export class Tree {
       .enter()
       .append("text")
       .text(function(d) {
+        //return d.data.name + ' (' + d.data.gender + ')';
         return d.data.name;
       })
       .attr("x", function(d) {
-        return d.x;
+        return d.x - 60;
       })
       .attr("y", function(d) {
-        return d.y + 5;
+        return d.y - 30;
       });
   }
 
