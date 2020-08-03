@@ -37,7 +37,14 @@ export const familyArr = [
     id: 6,
     name: "Rajakantham",
     key: "lakshimapathi.rajakantham",
-    gender: "female"
+    gender: "female",
+    partner: "Sundarajan",
+    partnerId: "Sundarajan",
+    partnerGender: "male",
+    partnerProfilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/116017391_962054714308778_7368447131721223538_n.jpg?oh=f7ef6201f24b48536711403df6745ca6&oe=5F2D2697",
+    profilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/59991951_389396878341316_209012792458477568_n.jpg?oh=24e081601c6bc087de2d5b5daef23384&oe=5F2CC3CB"
   },
   /** FIRST GENERATION **/
   /** NARASIMHAN GENERATION **/
@@ -84,7 +91,11 @@ export const familyArr = [
     id: 13,
     name: "Srinivasan",
     key: "lakshimapathi.rajalakshmi.srinivasan",
-    gender: "male"
+    gender: "male",
+    partner: "Devika",
+    partnerId: "devika",
+    partnerGender: "female",
+    partnerProfilePic: ""
   },
   {
     id: 14,
@@ -111,13 +122,19 @@ export const familyArr = [
     id: 17,
     name: "Gandi",
     key: "lakshimapathi.krishnaveni.gandi",
-    gender: "male"
+    gender: "male",
+    partner: "Indirani",
+    partnerId: "Indirani",
+    partnerGender: "female"
   },
   {
     id: 18,
     name: "Raghupathy",
     key: "lakshimapathi.krishnaveni.raghupathy",
-    gender: "male"
+    gender: "male",
+    partner: "Amirthavalli",
+    partnerId: "Amirthavalli",
+    partnerGender: "female"
   },
   {
     id: 19,
@@ -129,31 +146,58 @@ export const familyArr = [
     id: 20,
     name: "Chandra Babu",
     key: "lakshimapathi.krishnaveni.chandra_babu",
-    gender: "male"
+    gender: "male",
+    partner: "Shanthi",
+    partnerId: "Shanthi",
+    partnerGender: "female"
   },
   {
     id: 21,
     name: "Mohan",
     key: "lakshimapathi.krishnaveni.mohan",
-    gender: "male"
+    gender: "male",
+    partner: "Revathi",
+    partnerId: "Revathi",
+    partnerGender: "female"
   },
   {
     id: 22,
     name: "Bhavani",
     key: "lakshimapathi.krishnaveni.bhavani",
-    gender: "female"
+    gender: "female",
+    partner: "Sugumar",
+    partnerId: "Sugumar",
+    partnerGender: "male"
   },
   {
     id: 23,
     name: "Kalaivani",
     key: "lakshimapathi.krishnaveni.kalaivani",
-    gender: "female"
+    gender: "female",
+    partner: "Chandrasekhar",
+    partnerId: "Chandrasekhar",
+    partnerGender: "male"
   },
   {
     id: 24,
     name: "Murugan",
     key: "lakshimapathi.krishnaveni.murugan",
-    gender: "male"
+    gender: "male",
+    partner: "Mangalam",
+    partnerId: "Mangalam",
+    partnerGender: "female"
+  },
+  {
+    id: 241,
+    name: "varshini",
+    key: "lakshimapathi.krishnaveni.murugan.varshini",
+    gender: "female"
+  },
+  {
+    id: 24,
+    name: "Nivethithaa",
+    key: "lakshimapathi.krishnaveni.murugan.nivethithaa",
+    gender: "female"
   },
   /** KRISHNAVENI GENERATION **/
 
@@ -171,43 +215,73 @@ export const familyArr = [
     id: 26,
     name: "Punitha",
     key: "lakshimapathi.rajakantham.punitha",
-    gender: "female"
+    gender: "female",
+    partner: "Kothandan",
+    partnerId: "Kothandan",
+    partnerGender: "male",
+    partnerProfilePic: ""
   },
   {
     id: 27,
     name: "Amudha",
     key: "lakshimapathi.rajakantham.amudha",
-    gender: "female"
+    gender: "female",
+    partner: "Shankar",
+    partnerId: "Shankar",
+    partnerGender: "male",
+    partnerProfilePic: ""
   },
   {
     id: 28,
     name: "Yuvaraj",
     key: "lakshimapathi.rajakantham.yuvaraj",
-    gender: "male"
+    gender: "male",
+    partner: "Sudha",
+    partnerId: "Sudha",
+    partnerGender: "female",
+    partnerProfilePic: ""
   },
   {
     id: 29,
     name: "Pushpalatha",
     key: "lakshimapathi.rajakantham.pushpalatha",
-    gender: "female"
+    gender: "female",
+    partner: "Ravi",
+    partnerId: "Ravi",
+    partnerGender: "male",
+    partnerProfilePic: "",
+    profilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/108130742_744819649587269_9191227854467973139_n.jpg?oh=d14684e8e89626cebb898c28ddfff9f4&oe=5F2C2495"
   },
   {
     id: 30,
     name: "Paneer Selvam",
     key: "lakshimapathi.rajakantham.paneer_selvam",
-    gender: "male"
+    gender: "male",
+    partner: "Kowsalaya",
+    partnerId: "Kowsalaya",
+    partnerGender: "female",
+    partnerProfilePic: ""
   },
   {
     id: 31,
     name: "Vithesh Kumar",
     key: "lakshimapathi.rajakantham.vithesh_kumar",
-    gender: "male"
+    gender: "male",
+    partner: "Guna",
+    partnerId: "Guna",
+    partnerGender: "female",
+    partnerProfilePic: ""
   },
   {
     id: 32,
     name: "Kannan",
     key: "lakshimapathi.rajakantham.kannan",
-    gender: "male"
+    gender: "male",
+    partner: "Jhansi",
+    partnerId: "Jhansi",
+    partnerGender: "female",
+    partnerProfilePic: ""
   },
   /** RAJAKANTHAM GENERATION **/
 
@@ -378,13 +452,43 @@ export const familyArr = [
     id: 53,
     name: "Mugilan",
     key: "lakshimapathi.krishnaveni.gandi.mugilan",
+    gender: "male",
+    partner: "Vijayavani",
+    partnerId: "Vijayavani",
+    partnerGender: "female"
+  },
+  {
+    id: 5300,
+    name: "Tharun Gandhi",
+    key: "lakshimapathi.krishnaveni.gandi.mugilan.tharun",
+    gender: "male"
+  },
+  {
+    id: 5301,
+    name: "Hari Krishnaa",
+    key: "lakshimapathi.krishnaveni.gandi.mugilan.hari_krishna",
     gender: "male"
   },
   {
     id: 54,
     name: "Kavitha",
     key: "lakshimapathi.krishnaveni.gandi.kavitha",
-    gender: "female"
+    gender: "female",
+    partner: "Saminathan",
+    partnerId: "Saminathan",
+    partnerGender: "male"
+  },
+  {
+    id: 5400,
+    name: "Pragatheesh",
+    key: "lakshimapathi.krishnaveni.gandi.kavitha.pragatheesh",
+    gender: "male"
+  },
+  {
+    id: 5401,
+    name: "Mugunth",
+    key: "lakshimapathi.krishnaveni.gandi.kavitha.mugunth",
+    gender: "male"
   },
   /** GANDI GENERATION */
 
@@ -393,13 +497,37 @@ export const familyArr = [
     id: 55,
     name: "Shiva",
     key: "lakshimapathi.krishnaveni.raghupathy.shiva",
+    gender: "male",
+    partner: "Neelima",
+    partnerId: "Neelima",
+    partnerGender: "female"
+  },
+  {
+    id: 55000,
+    name: "Nirwan",
+    key: "lakshimapathi.krishnaveni.raghupathy.shiva.nirwan",
     gender: "male"
   },
   {
-    id: 56,
-    name: "Viji",
-    key: "lakshimapathi.krishnaveni.raghupathy.viji",
+    id: 56000,
+    name: "Kalpana R",
+    key: "lakshimapathi.krishnaveni.raghupathy.kalpana_r",
+    gender: "female",
+    partner: "Jaiganesh",
+    partnerId: "Jaigsnesh",
+    partnerGender: "male"
+  },
+  {
+    id: 560,
+    name: "Pomma",
+    key: "lakshimapathi.krishnaveni.raghupathy.kalpana_r.pomma",
     gender: "female"
+  },
+  {
+    id: 561,
+    name: "Jerry",
+    key: "lakshimapathi.krishnaveni.raghupathy.kalpana_r.jerry",
+    gender: "male"
   },
   /** RAGHUPATHY GENERATION */
 
@@ -408,27 +536,79 @@ export const familyArr = [
     id: 57,
     name: "Vijay",
     key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.vijay",
+    gender: "male",
+    partner: "Sumathi",
+    partnerId: "Sumathi",
+    partnerGender: "female"
+  },
+  {
+    id: 5798,
+    name: "Harshitha",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.vijay.harshitha",
+    gender: "female"
+  },
+  {
+    id: 57981,
+    name: "Kaashika",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.vijay.kaashika",
+    gender: "female"
+  },
+  {
+    id: 5709,
+    name: "Madhuranayagam",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.madhuranayagam",
     gender: "male"
   },
   {
-    id: 58,
-    name: "Unknown",
-    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.unknown",
+    id: 570913234,
+    name: "Uma Maheswari",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.uma_maheswari",
+    gender: "female",
+    partner: "M Sundaram",
+    partnerId: "Meenakshi Sundaram",
+    partnerGender: "male"
+  },
+  {
+    id: 5709132,
+    name: "Haritha",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.uma_maheswari.haritha",
     gender: "female"
   },
+  {
+    id: 57091323,
+    name: "Sanjana",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.uma_maheswari.sanjana",
+    gender: "female"
+  },
+
+  // {
+  //   id: 58,
+  //   name: "Baby",
+  //   key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.baby",
+  //   gender: "female"
+  // },
   {
     id: 59,
     name: "Prabhu",
     key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.prabhu",
-    gender: "male"
+    gender: "male",
+    partner: "Lavanya",
+    partnerId: "Lavanya",
+    partnerGender: "female"
+  },
+  {
+    id: 5900033,
+    name: "Nitharshana",
+    key: "lakshimapathi.krishnaveni.rani_bhuvaneshwari.prabhu.nitharshana",
+    gender: "female"
   },
   /** RANI BHUVANESWARI GENERATION */
 
   /** CHANDRA BABU GENERATION */
   {
     id: 60,
-    name: "Unknown",
-    key: "lakshimapathi.krishnaveni.chandra_babu.unknown",
+    name: "Divya C",
+    key: "lakshimapathi.krishnaveni.chandra_babu.divya_c",
     gender: "female"
   },
   /** CHANDRA BABU GENERATION */
@@ -438,7 +618,10 @@ export const familyArr = [
     id: 61,
     name: "Niraimathi",
     key: "lakshimapathi.krishnaveni.mohan.niraimathi",
-    gender: "female"
+    gender: "female",
+    partner: "Kishore",
+    partnerId: "Kishore",
+    partnerGender: "male"
   },
   {
     id: 62,
@@ -451,15 +634,39 @@ export const familyArr = [
   /** BHAVANI GENERATION */
   {
     id: 63,
-    name: "Vinoth",
-    key: "lakshimapathi.krishnaveni.bhavani.vinoth",
+    name: "Vinoth S",
+    key: "lakshimapathi.krishnaveni.bhavani.vinoth_s",
+    gender: "male",
+    partner: "Saranya",
+    partnerId: "Saranya",
+    partnerGender: "female"
+  },
+  {
+    id: 63,
+    name: "Anirudh",
+    key: "lakshimapathi.krishnaveni.bhavani.vinoth_s.anirudh",
     gender: "male"
   },
   {
     id: 64,
     name: "Ravi",
     key: "lakshimapathi.krishnaveni.bhavani.ravi",
-    gender: "male"
+    gender: "male",
+    partner: "Uma",
+    partnerId: "Uma",
+    partnerGender: "female"
+  }, 
+  {
+    id: 64,
+    name: "Nigarika",
+    key: "lakshimapathi.krishnaveni.bhavani.ravi.nigarika",
+    gender: "female"
+  },
+  {
+    id: 64,
+    name: "Ruthvika",
+    key: "lakshimapathi.krishnaveni.bhavani.ravi.ruthvika",
+    gender: "female"
   },
   /** BHAVANI GENERATION */
 
@@ -471,26 +678,29 @@ export const familyArr = [
     gender: "female"
   },
   {
+    id: 661,
+    name: "Krithik",
+    key: "lakshimapathi.krishnaveni.kalaivani.poovizhi.krithik",
+    gender: "male"
+  },
+  {
     id: 66,
     name: "Chandhini",
     key: "lakshimapathi.krishnaveni.kalaivani.chandhini",
-    gender: "female"
+    gender: "female",
+    partner: "Rakesh",
+    partnerId: "Rakesh",
+    partnerGender: "male"
+  },
+  {
+    id: 661,
+    name: "Tharakesh",
+    key: "lakshimapathi.krishnaveni.kalaivani.chandhini.tharakesh",
+    gender: "male"
   },
   /** KALAIVANI GENERATION */
 
   /** MURUGAN GENERATION */
-  {
-    id: 67,
-    name: "Unknown",
-    key: "lakshimapathi.krishnaveni.murugan.unknown",
-    gender: "female"
-  },
-  {
-    id: 68,
-    name: "Unknown",
-    key: "lakshimapathi.krishnaveni.murugan.unknown",
-    gender: "female"
-  },
   /** MURUGAN GENERATION */
 
   /** VENI GENERATION */
@@ -513,7 +723,14 @@ export const familyArr = [
     id: 71,
     name: "Lokesh",
     key: "lakshimapathi.rajakantham.amudha.lokesh",
-    gender: "female"
+    gender: "female",
+    partner: "Vinodhini",
+    partnerId: "Vinodhini",
+    partnerGender: "female",
+    partnerProfilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/104757434_123390592732551_7092858711485166056_n.jpg?oh=383451d9f50e8470125b176d9d0f6b1c&oe=5F2D3825",
+    profilePic:
+      "https://media-exp1.licdn.com/dms/image/C5603AQGDtmZmlPbxuQ/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=p3CnFwEuGseaF76zHozJgmhzGTjKXmJYvQuSrn_fTEs"
   },
   {
     id: 72,
@@ -525,16 +742,25 @@ export const familyArr = [
 
   /** YUVARAJ GENERATION */
   {
-    id: 73,
+    id: 7311,
     name: "Kamesh",
     key: "lakshimapathi.rajakantham.yuvaraj.kamesh",
-    gender: "male"
+    gender: "male",
+    partner: "Bhuvaana",
+    partnerId: "Bhuvaana",
+    partnerGender: "female",
+    // partnerProfilePic:
+      // "https://pps.whatsapp.net/v/t61.24694-24/117196749_511765262935835_2230946462709066791_n.jpg?oh=f5c54d1580cb2c7b59f5fa94928d336e&oe=5F2D0D74",
+     profilePic:
+      "https://media-exp1.licdn.com/dms/image/C5103AQGGJ68RCUWVQA/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=X5s30dZW3-xgv4rksCRHFM5gi6ty3A3BioWo-plqIDU"
   },
   {
     id: 74,
     name: "Indresh",
     key: "lakshimapathi.rajakantham.yuvaraj.indresh",
-    gender: "male"
+    gender: "male",
+    profilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/55989412_2829694707254673_6338528742779912192_n.jpg?oh=c26d6fc21c4cdda8b359cff47e03cd17&oe=5F2D2201"
   },
   /** YUVARAJ GENERATION */
 
@@ -543,13 +769,27 @@ export const familyArr = [
     id: 75,
     name: "Umesh",
     key: "lakshimapathi.rajakantham.pushpalatha.umesh",
-    gender: "male"
+    gender: "male",
+    partner: "Maithrayee",
+    partnerId: "Maithrayee",
+    partnerGender: "female",
+    partnerProfilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/106574387_4271166516256693_1236222402881712886_n.jpg?oh=3fc427870511010ed9e63486ebf80a87&oe=5F2C272C",
+    profilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/106650770_761789991293082_4093215240748410832_n.jpg?oh=bb20f844b97a1035fe7571bdc604d27e&oe=5F2BD722"
   },
   {
     id: 76,
     name: "Kiran",
     key: "lakshimapathi.rajakantham.punitha.kiran",
-    gender: "male"
+    gender: "male",
+    partner: "Saranya",
+    partnerId: "Saranya",
+    partnerGender: "female",
+    partnerProfilePic:
+      "https://pps.whatsapp.net/v/t61.24694-24/116254140_298393591512942_362505828724917785_n.jpg?oh=0d675dc6421d59f797aa8f878a687b1b&oe=5F2CBA4F",
+    profilePic:
+      "https://avatars1.githubusercontent.com/u/17508125?s=400&u=3bf754dac65a34f898e50859835923d9ef41f872&v=4"
   },
   /** PUSHPALATHA GENERATION */
 

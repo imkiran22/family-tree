@@ -33,6 +33,9 @@ export class Tree {
       if (n.children && n.children.length > 0) {
         if (levelWidth.length <= level + 1) levelWidth.push(0);
         levelWidth[level + 1] += n.children.length;
+        if (n.data.partner) {
+          levelWidth[level + 1] += 4;
+        }
         n.children.forEach(d => {
           childCount(level + 1, d);
         });
@@ -86,6 +89,13 @@ export class Tree {
         );
       });
 
+    const pconnections = this.svg
+      .append("g")
+      .selectAll("path")
+      .data(information.links());
+
+    
+
     const patterns = this.svg
       .append("g")
       .selectAll("pattern")
@@ -111,7 +121,38 @@ export class Tree {
       .attr("width", 80)
       .attr("height", 60)
       .attr("xlink:href", function(d) {
-        return DEFAULT_PROFILE_PIC[d.data.gender];
+        return d.data.profilePic || DEFAULT_PROFILE_PIC[d.data.gender];
+      });
+
+    const partnerPatterns = this.svg
+      .append("g")
+      .selectAll("pattern")
+      .data(information.descendants());
+
+    partnerPatterns
+      .enter()
+      .append("pattern")
+      .attr("id", function(d) {
+        return d.id;
+      })
+      .attr("width", "80px")
+      .attr("height", "60px");
+
+    partnerPatterns
+      .enter()
+      .append("svg:image")
+      .attr("x", function(d) {
+        return d.x + 90;
+      })
+      .attr("y", function(d) {
+        return d.y - 20;
+      })
+      .attr("width", 80)
+      .attr("height", 60)
+      .attr("xlink:href", function(d) {
+        return (
+          d.data.partnerProfilePic || DEFAULT_PROFILE_PIC[d.data.partnerGender]
+        );
       });
 
     const rectangles = this.svg
@@ -135,6 +176,31 @@ export class Tree {
         return `url(#${d.id})`;
       });
 
+    const partnerRectangles = this.svg
+      .append("g")
+      .selectAll("rect")
+      .data(information.descendants());
+
+    partnerRectangles
+      .enter()
+      .append("rect")
+      .attr("x", function(d) {
+        // return d.x - 75;
+        return d.x + 100;
+      })
+      .attr("y", function(d) {
+        return d.y - 20;
+      })
+      //.attr("width", "150px")
+      .attr("width", "60px")
+      .attr("height", "60px")
+      .attr("fill", function(d) {
+        return `url(#${d.data.partnerProfilePic})`;
+      })
+      .classed("hide", function(d) {
+        return d.data.partner ? false : true;
+      });
+
     const names = this.svg
       .append("g")
       .selectAll("text")
@@ -143,7 +209,6 @@ export class Tree {
       .enter()
       .append("text")
       .text(function(d) {
-        //return d.data.name + ' (' + d.data.gender + ')';
         return d.data.name;
       })
       .attr("x", function(d) {
@@ -151,6 +216,43 @@ export class Tree {
       })
       .attr("y", function(d) {
         return d.y - 30;
+      });
+
+    const partnerNames = this.svg
+      .append("g")
+      .selectAll("text")
+      .data(information.descendants());
+
+    partnerNames
+      .enter()
+      .append("text")
+      .text(function(d) {
+        return d.data.partner;
+      })
+      .attr("x", function(d) {
+        return d.x + 80;
+      })
+      .attr("y", function(d) {
+        return d.y - 30;
+      });
+
+      pconnections
+      .enter()
+      .append("path")
+      .attr("d", function(d) {
+        
+        return (
+          "M" +
+          (d.source.x + 100) +
+          " " +
+          " H " +
+          d.source.x +
+          " " +
+          (d.source.x + 100)
+        );
+      })
+      .classed("hide", function(d) {
+        return d.source.data.partner ? false : true;
       });
   }
 

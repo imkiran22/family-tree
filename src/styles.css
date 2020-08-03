@@ -17,8 +17,12 @@ body {
   overflow: scroll;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 rect {
-  /* fill: green; */
+  /* fill: transparent; */
   stroke: gray;
   stroke-width: 2;
 }
