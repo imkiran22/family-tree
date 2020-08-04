@@ -21,7 +21,7 @@ export class Tree {
     this.svg = d3
       .select("#tree")
       .append("svg")
-      .attr("width", width + "px")
+      .attr("width", width / 2 + "px")
       .attr("height", height + "px")
       .attr("viewBox", `0 -50 ${width} ${height}`)
       .style("overflow", "scroll");
@@ -88,13 +88,6 @@ export class Tree {
           d.target.y
         );
       });
-
-    const pconnections = this.svg
-      .append("g")
-      .selectAll("path")
-      .data(information.links());
-
-    
 
     const patterns = this.svg
       .append("g")
@@ -236,24 +229,26 @@ export class Tree {
         return d.y - 30;
       });
 
-      pconnections
+    window.information = information;
+
+    //setTimeout(() => {
+    const pconnections = this.svg
+      .append("g")
+      .selectAll("path")
+      .data(information.descendants());
+    console.log(information.descendants());
+
+    pconnections
       .enter()
       .append("path")
       .attr("d", function(d) {
-        
-        return (
-          "M" +
-          (d.source.x + 100) +
-          " " +
-          " H " +
-          d.source.x +
-          " " +
-          (d.source.x + 100)
-        );
+        return "M" + d.x + " " + d.y + " H " + d.x + " " + (d.x + 100);
       })
       .classed("hide", function(d) {
-        return d.source.data.partner ? false : true;
+        //console.log(d.source.data);
+        return d.data.partner ? false : true;
       });
+    //}, 2000)
   }
 
   createTree() {

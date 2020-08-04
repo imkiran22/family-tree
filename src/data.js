@@ -749,18 +749,14 @@ export const familyArr = [
     partner: "Bhuvaana",
     partnerId: "Bhuvaana",
     partnerGender: "female",
-    // partnerProfilePic:
-      // "https://pps.whatsapp.net/v/t61.24694-24/117196749_511765262935835_2230946462709066791_n.jpg?oh=f5c54d1580cb2c7b59f5fa94928d336e&oe=5F2D0D74",
-     profilePic:
+    profilePic:
       "https://media-exp1.licdn.com/dms/image/C5103AQGGJ68RCUWVQA/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=X5s30dZW3-xgv4rksCRHFM5gi6ty3A3BioWo-plqIDU"
   },
   {
     id: 74,
     name: "Indresh",
     key: "lakshimapathi.rajakantham.yuvaraj.indresh",
-    gender: "male",
-    profilePic:
-      "https://pps.whatsapp.net/v/t61.24694-24/55989412_2829694707254673_6338528742779912192_n.jpg?oh=c26d6fc21c4cdda8b359cff47e03cd17&oe=5F2D2201"
+    gender: "male"
   },
   /** YUVARAJ GENERATION */
 
