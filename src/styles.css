@@ -1,4 +1,10 @@
 /* Add your styles here */
+@media print {
+  @page {
+    size: A4 landscape;
+  }
+}
+
 textarea {
   width: 100%;
   font-size: 14px;

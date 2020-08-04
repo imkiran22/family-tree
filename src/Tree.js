@@ -89,6 +89,25 @@ export class Tree {
         );
       });
 
+    //setTimeout(() => {
+    const pconnections = this.svg
+      .append("g")
+      .selectAll("path")
+      .data(information.descendants());
+    //console.log(information.descendants());
+
+    pconnections
+      .enter()
+      .append("path")
+      .attr("d", function(d) {
+        return "M" + d.x + " " + d.y + " H " + d.x + " " + (d.x + 100);
+      })
+      .classed("hide", function(d) {
+        //console.log(d.source.data);
+        return d.data.partner ? false : true;
+      });
+    //}, 2000)
+
     const patterns = this.svg
       .append("g")
       .selectAll("pattern")
@@ -229,26 +248,7 @@ export class Tree {
         return d.y - 30;
       });
 
-    window.information = information;
-
-    //setTimeout(() => {
-    const pconnections = this.svg
-      .append("g")
-      .selectAll("path")
-      .data(information.descendants());
-    console.log(information.descendants());
-
-    pconnections
-      .enter()
-      .append("path")
-      .attr("d", function(d) {
-        return "M" + d.x + " " + d.y + " H " + d.x + " " + (d.x + 100);
-      })
-      .classed("hide", function(d) {
-        //console.log(d.source.data);
-        return d.data.partner ? false : true;
-      });
-    //}, 2000)
+    //window.information = information;
   }
 
   createTree() {

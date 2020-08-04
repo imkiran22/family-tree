@@ -52,7 +52,10 @@ export const familyArr = [
     id: 7,
     name: "Janardhanan",
     key: "lakshimapathi.narasimhan.janardhanan",
-    gender: "male"
+    gender: "male",
+    partner: "Vijaya",
+    partnerId: "Vijaya",
+    partnerGender: "female"
   },
   {
     id: 8,
@@ -76,7 +79,10 @@ export const familyArr = [
     id: 11,
     name: "Devika",
     key: "lakshimapathi.narasimhan.devika",
-    gender: "female"
+    gender: "female",
+    partner: "Srinivasan",
+    partnerId: "Srinivasan",
+    partnerGender: "male"
   },
   /** NARASIMHAN GENERATION **/
 
@@ -290,12 +296,36 @@ export const familyArr = [
     id: 33,
     name: "Sathish Babu",
     key: "lakshimapathi.narasimhan.janardhanan.sathish_babu",
+    gender: "male",
+    partner: "Renuka",
+    partnerId: "Renuka",
+    partnerGender: "female"
+  },
+  {
+    id: 330,
+    name: "Unknown",
+    key: "lakshimapathi.narasimhan.janardhanan.sathish_babu.Unknown",
+    gender: "male"
+  },
+  {
+    id: 331,
+    name: "Unknown",
+    key: "lakshimapathi.narasimhan.janardhanan.sathish_babu.Unknown",
     gender: "male"
   },
   {
     id: 34,
     name: "Prasanna",
     key: "lakshimapathi.narasimhan.janardhanan.prasanna",
+    gender: "male",
+    partner: "Babitha",
+    partnerId: "Babitha",
+    partnerGender: "female"
+  },
+  {
+    id: 34,
+    name: "Unknown",
+    key: "lakshimapathi.narasimhan.janardhanan.prasanna.unknown",
     gender: "male"
   },
   /** JANARDHANAN GENERATION **/
@@ -655,7 +685,7 @@ export const familyArr = [
     partner: "Uma",
     partnerId: "Uma",
     partnerGender: "female"
-  }, 
+  },
   {
     id: 64,
     name: "Nigarika",
